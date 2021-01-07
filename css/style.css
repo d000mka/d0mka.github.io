@@ -1,0 +1,828 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    min-height: 300vh;
+    font-size: 10px;
+
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(191, 182, 174, 0.5);
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    line-height: 25px;
+    border-bottom: 2px solid transparent;
+
+}
+
+a {
+    display: block;
+    font-family: "Nunito";
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0D0D0D;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+
+header div.welcome {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 15%;
+    right: 15%;
+    padding: 10px;
+    color: #0D0D0D;
+    background-color: rgb(191, 182, 174, .5);
+    border: 2px solid #0D0D0D;
+    text-align: center;
+}
+
+header p {
+    margin-top: 10%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin-top: 5%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin-top: 5%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-top: 10%;
+    padding: 0 20px;
+    line-height: 20px;
+    background-color: rgb(191, 182, 174);
+    font-size: 0.7em;
+    font-family: "Nunito";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0D0D0D;
+    border: 1px solid #0D0D0D;
+}
+
+@media (orientation: landscape) {
+
+    nav ul li {
+        margin: 0 5%;
+    }
+
+    header div.welcome {
+        top: 25%;
+        bottom: 25%;
+    }
+
+    header p {
+        margin-top: 2.5%;
+    }
+
+    header h1 {
+        margin-top: 3%;
+    }
+
+    header h2 {
+        margin-top: 3%;
+    }
+
+    header button {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 375px) and (orientation: portrait) {
+    nav ul li {
+        margin: 0 2%;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    header div.welcome {
+        top: 25%;
+        bottom: 25%;
+    }
+
+    header p {
+        margin-top: 20%;
+        font-size: 2em;
+    }
+
+    header h1 {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+
+    header h2 {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+
+    header button {
+        margin-top: 10%;
+        line-height: 30px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    nav ul li {
+        margin: 0 5%;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+
+    header div.welcome {
+        top: 25%;
+        bottom: 25%;
+        left: 10%;
+        right: 10%;
+    }
+
+    header p {
+        margin-top: 10%;
+        font-size: 2em;
+    }
+
+    header h1 {
+        margin-top: 10%;
+        font-size: 2em;
+    }
+
+    header h2 {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+
+    header button {
+        margin-top: 10%;
+        line-height: 30px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 414px) and (orientation: landscape) {
+    nav ul li {
+        margin: 0 5%;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    header p {
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+
+    header button {
+        margin-top: 2%;
+        line-height: 20px;
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 710px) and (orientation: portrait) {
+    header p {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    nav ul li {
+        margin: 0 5%;
+        line-height: 50px;
+    }
+
+    a {
+        font-size: 2.5em;
+    }
+
+    header p {
+        margin-top: 10%;
+        font-size: 3em;
+    }
+
+    header h1 {
+        margin-top: 5%;
+        font-size: 3em;
+    }
+
+    header h2 {
+        margin-top: 5%;
+        font-size: 3em;
+    }
+
+    header button {
+        margin-top: 10%;
+        line-height: 50px;
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width:712px) and (orientation: landscape) {
+    header p {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+
+    header h1 {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+
+    header h2 {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+
+    header button {
+        margin-top: 5%;
+        line-height: 40px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        margin: 0 5%;
+        line-height: 30px;
+    }
+
+    a {
+        font-size: 2em;
+    }
+
+
+    header div.welcome {
+        top: 20%;
+        bottom: 20%;
+        left: 15%;
+        right: 15%;
+    }
+
+    header p {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+
+    header h1 {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+
+    header h2 {
+        margin-top: 2%;
+        font-size: 2em;
+    }
+
+    header button {
+        margin-top: 2%;
+        line-height: 40px;
+        font-size: 0.7em;
+    }
+
+    header button:hover {
+        cursor: pointer;
+        background-color: #0D0D0D;
+        color: rgb(191, 182, 174);
+    }
+
+    nav ul li:hover {
+        border-bottom: 2px solid #0D0D0D;
+    }
+}
+
+@media (min-width: 812px) and (orientation: landscape) {
+    header div.welcome {
+        top: 20%;
+        bottom: 20%;
+        left: 15%;
+        right: 15%;
+    }
+
+}
+
+@media (min-width: 813px) and (orientation: landscape) {
+    header div.welcome {
+        top: 30%;
+        bottom: 30%;
+        left: 25%;
+        right: 25%;
+    }
+
+    header p {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width:1024px) and (orientation: landscape) {
+    a {
+        font-size: 2em;
+    }
+
+    header p {
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 2.5em;
+    }
+
+    header button {
+        border: 2px solid #0D0D0D;
+    }
+
+
+    header button:hover {
+        cursor: pointer;
+        background-color: #0D0D0D;
+        color: rgb(191, 182, 174);
+    }
+
+    nav ul li:hover {
+        border-bottom: 2px solid #0D0D0D;
+    }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    header div.welcome {
+        top: 30%;
+        bottom: 30%;
+        left: 25%;
+        right: 25%;
+    }
+
+}
+
+@media (min-width: 1290px) and (orientation: landscape) {
+    nav ul li {
+        margin-left: 2%;
+    }
+
+    header p {
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    header h1 {
+        margin-top: 2%;
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        margin-top: 2%;
+        font-size: 2.5em;
+    }
+
+    header button:hover {
+        cursor: pointer;
+        background-color: #0D0D0D;
+        color: rgb(191, 182, 174);
+    }
+
+    nav ul li:hover {
+        border-bottom: 2px solid #0D0D0D;
+    }
+
+}
+
+#about {
+    background-color: #F2F2F2;
+    min-height: 50vh;
+}
+
+.feature {
+    top: 10%;
+    left: 10%;
+    font-family: "Nunito";
+    color: #0D0D0D;
+}
+
+.feature h1 {
+    padding: 3%;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.feature p {
+    padding: 2%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.second {
+    font-weight: bold;
+    text-align: center;
+}
+
+.feature ul {
+    padding: 0 5% 5%;
+}
+
+.feature li {
+    font-size: 1.2em;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .feature h1 {
+        font-size: 3em;
+    }
+
+    .feature p {
+        font-size: 1.5em;
+    }
+
+    .second {
+        font-size: 1.5em;
+    }
+
+    .feature li {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 667px) and (orientation: landscape) {
+    .feature h1 {
+        font-size: 3.5em;
+    }
+
+    .feature p {
+        font-size: 2em;
+    }
+
+    .second {
+        font-size: 2em;
+    }
+
+    .feature li {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 712px) and (orientation: landscape) {
+    .feature h1 {
+        font-size: 3.2em;
+    }
+
+    .feature p {
+        font-size: 1.7em;
+    }
+
+    .second {
+        font-size: 1.7em;
+    }
+
+    .feature li {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 712px) and (orientation: portrait) {
+    .feature h1 {
+        font-size: 3.5em;
+    }
+
+    .feature p {
+        font-size: 2em;
+    }
+
+    .second {
+        font-size: 2em;
+    }
+
+    .feature li {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .feature h1 {
+        font-size: 3.5em;
+    }
+
+    .feature p {
+        font-size: 3em;
+    }
+
+    .second {
+        font-size: 3em;
+    }
+
+    .feature li {
+        font-size: 3em;
+    }
+}
+
+@media (min-width:1024px) and (orientation: landscape) {
+    .feature h1 {
+        font-size: 3.5em;
+    }
+
+    .feature p {
+        font-size: 2em;
+    }
+
+    .second {
+        font-size: 2em;
+    }
+
+    .feature li {
+        font-size: 2em;
+    }
+
+}
+
+@media (min-width:1280px) and (orientation: landscape) {
+    .feature h1 {
+        font-size: 3em;
+    }
+
+    .feature p {
+        font-size: 2.2em;
+    }
+
+    .second {
+        font-size: 2.2em;
+    }
+
+    .feature li {
+        font-size: 2.2em;
+    }
+
+}
+
+#projects {
+    background-color: #0D0D0D;
+    font-family: "Nunito";
+    font-weight: 300;
+    text-align: left justify;
+    padding-bottom: 2.5%;
+}
+
+#projects h1 {
+    padding: 3%;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+#projects h2 {
+    padding: 5%;
+    margin-top: 5%;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F2;
+    margin-bottom: 5%;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+#projects .web img {
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+#projects .project {
+    margin-bottom: 5%;
+}
+
+.project .ap {
+    padding: 2%;
+    font-size: 1.5em;
+    color: #F2F2F2;
+}
+
+#projects .project p {
+    margin-bottom: 10%;
+    padding: 5%;
+}
+
+#projects .project:nth-of-type(even) {
+    background-color: #737373;
+}
+
+#projects .project:nth-of-type(odd) {
+    background-color: #593A2E;
+}
+
+#projects .project:nth-of-type(even) .ap {
+    color: #0D0D0D;
+}
+
+#projects .project:nth-of-type(even) h2 {
+    color: #0D0D0D;
+    border-bottom: 2px solid #0D0D0D;
+}
+
+@media (orientation: landscape) {
+
+    .web,
+    .ap {
+        width: 50%;
+        float: left;
+    }
+
+    #projects .web img {
+        margin-top: 20%;
+    }
+
+    #projects .project:nth-of-type(even) .web {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    #projects h1 {
+        font-size: 3.5em
+    }
+
+    #projects h2 {
+        font-size: 3em
+    }
+
+    .project p {
+        font-size: 2.5em
+    }
+
+}
+
+@media (min-width: 712px) and (orientation: landscape) {
+    #projects h1 {
+        font-size: 3em
+    }
+
+    #projects h2 {
+        font-size: 1.2em
+    }
+
+    .project p {
+        font-size: 1.2em
+    }
+
+    #projects .web img {
+        width: 100%;
+        padding: 5%;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    #projects h1 {
+        font-size: 3em
+    }
+
+    #projects h2 {
+        font-size: 1.7em
+    }
+
+    .project p {
+        font-size: 1.7em
+    }
+
+}
+
+#contact {
+    background-color: #F2F2F2;
+    font-family: "Nunito";
+    font-weight: bold;
+    min-height: 5vh;
+    text-align: center;
+}
+
+.contact-header h2 {
+    padding: 2.5%;
+    font-size: 2em;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 2.5%;
+    font-size: 1.5em;
+    color: #0D0D0D;
+}
+
+#contact a i {
+    margin: 0 5px;
+}
+
+@media (orientation: landscape) {
+    .contact-links a {
+        margin: 2.5% 1% 5%;
+    }
+}
+
+@media (min-width: 414px) and (orientation: portrait) {
+    .contact-header h2 {
+        font-size: 2.2em;
+    }
+
+    .contact-links a {
+        margin: 2.5% 2% 5%;
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 736px) and (orientation: landscape) {
+    .contact-header h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 812px) and (orientation: landscape) {
+    .contact-links a {
+        margin: 2% 2.5% 5%;
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .contact-header h2 {
+        font-size: 3em;
+    }
+
+    .contact-links a {
+        margin: 2.5% 3% 5%;
+        font-size: 2em;
+    }
+}
+
+footer {
+    padding: 30px;
+    background-color: #593A2E;
+    font-family: "Nunito";
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 2em;
+}
